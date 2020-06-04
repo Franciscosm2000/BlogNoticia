@@ -14,6 +14,42 @@ ul, li
 	display: flex;
 }
 
+a
+{
+	color: #fff;
+}
+
+hr
+{
+	width: 90%;
+	background: #1b1b2f;
+	margin: 20px;
+}
+
+.redes i:hover
+{
+	color: #e43f5a;
+	cursor: pointer;
+}
+
+/*animacion para elemento a*/
+.animacion::after
+{
+ 	content: "";  
+    display: block;  
+    width: 0px;
+	padding:  2px;
+    border-bottom: 1px solid #f2f2f2; 
+	transition: .5s; 
+}
+
+
+.animacion:hover::after
+{
+	width: 100%;
+}
+
+
 /*Elemento padre e hijos*/
 
 .padre
@@ -26,7 +62,7 @@ ul, li
 {
 	display: flex;
 	flex-flow: column nowrap;
-	background: url("../img/headerFondo.jpg");
+	background: url( "../img/headerFondo.jpg");
 	background-attachment: contain;
 	background-position: center;
 	background-size: cover;
@@ -92,6 +128,7 @@ ul, li
 	flex: 2 1 auto;
 }
 .redes li i
+
 {
 	margin: 0px;
 	margin-left: 20px;
@@ -106,6 +143,7 @@ ul, li
 	text-align: center;
 	font-size: 30px;
 	margin-top: 150px;
+	font-weight: bold;
 }
 
 .textoPrincipal p
@@ -115,6 +153,7 @@ ul, li
 	margin: 0 auto;
 	margin-top: 20px;
 	font-size: 25px;
+	font-weight: bold;
 
 }
 
@@ -183,8 +222,9 @@ ul, li
 
 .aside
 {
-	background: #162447;
 	flex: 1 1 auto;
+	padding: 50px;
+	width: 30%;
 }
 	/*hijos de articulo*/
 .article
@@ -231,8 +271,64 @@ input[type="button"]:hover
 	/*Fin hijos articulo*/
 
 	/*hijos aside*/
-.calendario{background: #1f4068;}
-.noticiasPopulares{background: #1f4068;}
+.busqueda
+{
+	flex: 1 1 auto;
+	margin: 10px 10px 50px 10px;
+	padding: 5px;
+}
+
+.busqueda input[type="text"]
+{
+	border: none;	
+	border-bottom: 1px solid #162447;
+	background-color: transparent;
+	width: 90%;
+}
+
+.busqueda a
+{
+	color: #162447;
+}
+
+.calendario
+{
+	flex: 1 1 auto;
+	margin: 10px 10px 50px 10px;
+	padding: 5px;
+	
+}
+
+.noticiasPopulares
+{
+	flex: 2 1 auto;
+}
+
+.noticiasPopulares h3
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 40px;
+}
+
+.noticiasPopulares h4
+{
+	font-size: 12px;
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.noticiasPopulares p 
+{
+	font-size: 15px;
+	text-align: justify;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 	/*fin aside*/
 /*---------------Fin Section*/
 
@@ -243,23 +339,33 @@ input[type="button"]:hover
 	display: flex;
 	flex-flow: row nowrap;
 	width: 100%;
-	height: 250px;
-	background: #1b1b2f;
+	height: 70px;
+	background: #f2f2f2;
+	border-top: 2px solid #fff;	
+}
+
+.footer #copyright
+{
+	flex: 1 1 auto;
+}
+
+.footer #copyright h3
+{
+	margin-left: 50px;
 }
 
 .footer .menu
 {
 	flex: 3 1 auto;
-	
+	background-color: #162447 ;
+	 transition: border-bottom  0.6s linear;
 }
+
 .footer .redes
 {
 	flex: 1 1 auto; 
-}
-
-.footer .redes a
-{
-
+	background-color: #162447 ;
+	padding: 20px;	
 }
 
 
